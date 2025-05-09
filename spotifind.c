@@ -1,3 +1,4 @@
+
 #include "extra.h"
 #include "list.h"
 #include "map.h"
@@ -5,6 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <locale.h>
+#include <windows.h>
 
 // Definición de la estructura Song que contiene información sobre cada canción
 typedef struct 
@@ -266,6 +269,8 @@ void buscar_por_tempo(Map *songs_by_id)
 
 // Función principal
 int main() {
+  SetConsoleOutputCP(CP_UTF8); 
+  setlocale(LC_ALL, "en_US.UTF-8");
   char opcion;     
   Map *songs_by_id = map_create(is_equal_str);
   Map *songs_by_artist = map_create(is_equal_str);
@@ -306,3 +311,4 @@ int main() {
 Para compilar: gcc spotifind.c extra.c list.c map.c -o spotifind -Wall 
 Para ejecutar: ./spotifind  
 Ruta del archivo CSV: data/song_dataset_.csv */
+
