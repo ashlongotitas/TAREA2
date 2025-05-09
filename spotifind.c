@@ -305,4 +305,4 @@ int main() {
 /* CODIGOS DEL PROGRAMA:
 Para compilar: gcc spotifind.c extra.c list.c map.c -o spotifind -Wall 
 Para ejecutar: ./spotifind  
-Ruta del archivo CSV: data/songs.csv */
+Ruta del archivo CSV: data/song_dataset_.csv */
