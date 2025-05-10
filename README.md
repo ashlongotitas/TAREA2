@@ -12,4 +12,17 @@ Pasos para compilar: comienza descargando y descomprimiendo el archivo (.zip). L
 1) Abre el archivo principal (en este caso spotifind.c)
 2) Selecciona "Terminal" ubicada en la esquina superior izquierda y luego "Nueva Terminal".
 3) Una vez dentro de la terminal seleccione la flecha que esta al lado del "+" y apretar git bash.
-4) Debes ingresar el siguiente comando: 
+4) Debes ingresar el siguiente comando: gcc spotifind.c extra.c list.c map.c -o spotifind -Wall y despúes ./spotifind
+5) La ruta del archivo de canciones es: data/song_dataset_.csv
+
+¡Y ya estás listo(a) para utilizar Spotifind!
+
+Funcionalidad
+
+Funcionando Correctamente:
+- Cargar canciones: Importa canciones desde un archivo CSV.
+- Buscar por género: Filtra canciones por género (ej. "pop", "rock").
+- Buscar por artista: Muestra todas las canciones de un artista específico.
+- Buscar por tempo: Clasifica canciones en lentas (<80 BPM), moderadas (80-120 BPM) o rápidas (>120 BPM).
+- Salir: Cierra la aplicación.
+
